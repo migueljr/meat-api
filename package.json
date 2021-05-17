@@ -1,0 +1,54 @@
+{
+  "name": "meat-api",
+  "version": "1.0.0",
+  "description": "API de Restaurantes",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node jest.startup.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "verbose": true,
+    "globals": {
+      "address": "http://localhost:3001",
+      "auth": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBlbWFpbC5jb20iLCJpYXQiOjE1MTYyMzkwMjJ9.HCtLeNy5-33THRqf03ayTWV0UiTNEuBgKzE-G_03d3g"
+    },
+    "testEnvironment": "node",
+    "transform": {
+      ">.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "restify": "*",
+    "restify-errors": "*"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "*",
+    "@types/jest": "*",
+    "@types/jsonwebtoken": "*",
+    "@types/mongoose": "*",
+    "@types/restify": "*",
+    "@types/restify-errors": "*",
+    "@types/supertest": "*",
+    "jest": "*",
+    "jest-cli": "*",
+    "supertest": "*",
+    "ts-jest": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  }
+}
